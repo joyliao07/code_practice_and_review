@@ -11,13 +11,11 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        added = 0
-        output = []
         for i in range(len(nums)):
-            added += nums[i]
-            output.append(i)
-            if added == target:
-                return output
+            for a in range((i+1), len(nums)):
+                added = nums[i] + nums[a]
+                if added == target:
+                    return [i, a]
 
 
 ############################################
@@ -25,7 +23,7 @@ class Solution(object):
 ####                                    ####
 ############################################
 
-# nums = [2, 7, 11, 15]
-# target = 9
-# solution = Solution()
-# print(solution.twoSum(nums, target))
+nums = [2, 7, 11, 15]
+target = 9
+solution = Solution()
+print(solution.twoSum(nums, target))
