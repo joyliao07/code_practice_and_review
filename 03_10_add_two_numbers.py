@@ -18,7 +18,33 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
+        num1, num2 = 0, 0
+        cur1, cur2 = l1, l2
+        position = 1
+        while cur1:
+            num1 += (cur1.val * position)
+            cur1 = cur1.next
+            position *= 10
 
+        position = 1
+        while cur2:
+            num2 += (cur2.val * position)
+            cur2 = cur2.next
+            position *= 10
+        
+        sum = num1 + num2
+        
+        lst = []
+        position = 10
+        while sum > 0:
+            temp = sum % position
+            sum -= temp
+            lst.append(temp/(position/10))
+            position *= 10
+        if lst == []:
+            return [0]
+        else:
+            return lst
 
 ############################################
 ####          TO PRINT SOLUTIONS:       ####
