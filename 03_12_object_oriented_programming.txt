@@ -1,4 +1,4 @@
-Sources:
+Reading Sources:
 
 https://www.techopedia.com/definition/3235/object-oriented-programming-oop 
 
@@ -6,7 +6,54 @@ https://www.python-course.eu/object_oriented_programming.php
 
 https://www.techopedia.com/definition/28106/polymorphism-general-programming 
 
+1. Encapsulation: 
 
+    Each object’s implementation and state are hidden behind well-defined boundaries. 
+
+    If an identifier is only preceded by one underscore character, it is a protected member. Protected members can be accessed like public members from outside of class. 
+    It can be seen in the following example. Let's save the following class as encapsulation.py:
+
+        class Encapsulation(object):
+            def __init__(self, a, b, c):
+                self.public = a
+                self._protected = b
+                self.__private = c
+
+    The following interactive sessions shows the behaviour of public, protected and private members:
+
+        >>> from encapsulation import Encapsulation
+        >>> x = Encapsulation(11,13,17)
+        >>> x.public
+        11
+        >>> x._protected
+        13
+        >>> x._protected = 23
+        >>> x._protected
+        23
+        >>> x.__private
+        Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+        AttributeError: 'Encapsulation' object has no attribute '__private'
+        >>> 
+
+    Notation        Name            Behaviour
+    Public          name            Can be accessed from inside and outside
+    Protected       _name           Like a public member, but they shouldn't be directly accessed from outside
+    Private         __nrivate       Can't be seen and accessed from outside
+
+2. Data abstraction / Data hiding: 
+
+    Protecting data:
+
+    Generally speaking data hiding is the mechanism for restricting the access to some of an object's components, this means that the internal representation of an object can't be seen from outside of the objects definition. Access to this data is typically only achieved through special methods: Getters and Setters. By using solely get()and set() methods, we can make sure that the internal data cannot be accidentally set into an inconsistent or invalid state.
+
+    Debug:
+
+    The separation of data from method prevents a common problem found in linear/sequencial software languages. If a bug appears in a linear code, it can be translated through a system and create masses of hard-to-trace errors. Conversely, an OOP program, with its separation of method and data, is not susceptible to such proliferated errors.
+
+3. Inheritance: 
+
+    The hierarchical arrangement of implementation fragments. Classes can inherit other classes. A class can inherit attributes and behaviour (methods) from other classes, called super-classes (or “ancestors”). A class which inherits from super-classes is called a Sub-class.
 
 
 
