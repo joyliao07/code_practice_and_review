@@ -55,6 +55,39 @@ https://www.techopedia.com/definition/28106/polymorphism-general-programming
 
     The hierarchical arrangement of implementation fragments. Classes can inherit other classes. A class can inherit attributes and behaviour (methods) from other classes, called super-classes (or “ancestors”). A class which inherits from super-classes is called a Sub-class.
 
+4. Polymorephism:
+
+    In a programming language that exhibits polymorphism, objects of classes belonging to the same hierarchical tree (inherited from a common base class) may possess functions bearing the same name, but each having different behaviors. 
+
+    As an example, assume there is a base class named Animals from which the subclasses Horse, Fish and Bird are derived. Also assume that the Animals class has a function named Move, which is inherited by all subclasses mentioned. With polymorphism, each subclass may have its own way of implementing the function. So, for example, when the Move function is called in an object of the Horse class, the function might respond by displaying trotting on the screen. On the other hand, when the same function is called in an object of the Fish class, swimming might be displayed on the screen. In the case of a Bird object, it may be flying. 
+    In effect, polymorphism cuts down the work of the developer because he can now create a sort of general class with all the attributes and behaviors that he envisions for it. When the time comes for the developer to create more specific subclasses with certain unique attributes and behaviors, the developer can simply alter code in the specific portions where the behaviors differ. All other portions of the code can be left as is. 
+
+Methods, Class Variables and Instance Variables:
+
+    Like baking a cake, an OOP program constructs objects according to the class definitions of the program. A class contains variables (ingredients of a recipe) and methods (instructions of a recipe). There are class variables, which have the same value in all methods and there are instance variables, which have normally different values for different objects.
+
+    Class variables on the other hand are shared by all objects (instances) of that class. They can be accessed and changed by any object. As there is only one copy of an object variable a change of value of such a variable is reflected in all the other instances as well. 
+
+    To give you an example of a static or class variable: A counter, a variable to count the total number of accounts can't be a instance variable. To this purpose we define a counter variable, which we place directly below the class statement. Any time the constructor will be called, this variable will be incremented. If an object of an account is deleted, this counter will be decremented. 
+
+        class Account(object): 
+            counter = 0
+            def __init__(self, holder, number, balance,credit_line=1500): 
+                Account.counter += 1
+                self.__Holder = holder 
+                self.__Number = number 
+                self.__Balance = balance
+                self.__CreditLine = credit_line
+            def __del__(self):
+                Account.counter -= 1
+
+
+Why do we use object-oriented programming?
+
+Object-oriented programming allows for simplified programming. Its benefits include reusability, refactoring, extensibility, maintenance and efficiency. OOP's modular design enables programmers to build software in manageable chunks rather than in large amounts of sequential code. 
+
+
+
 
 
 
