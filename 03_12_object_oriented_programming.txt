@@ -51,7 +51,9 @@ https://www.techopedia.com/definition/28106/polymorphism-general-programming
 
     The separation of data from method prevents a common problem found in linear/sequencial software languages. If a bug appears in a linear code, it can be translated through a system and create masses of hard-to-trace errors. Conversely, an OOP program, with its separation of method and data, is not susceptible to such proliferated errors.
 
+3. Inheritance: 
 
+    The hierarchical arrangement of implementation fragments. Classes can inherit other classes. A class can inherit attributes and behaviour (methods) from other classes, called super-classes (or “ancestors”). A class which inherits from super-classes is called a Sub-class.
 
 
 
