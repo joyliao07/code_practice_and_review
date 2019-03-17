@@ -8,5 +8,33 @@
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
 
+        lst = []
 
+        for i in range(numRows):
+            lst.append([])
 
+        position = 0
+        spe = False
+
+        for what in s:
+            if spe is False:
+                position += 1
+            if spe is True:
+                position -= 1
+
+            if position > numRows and spe is False:
+                position = (numRows - 1)
+                spe = True
+
+            if position == 1 and spe is True:
+                position = 1
+                spe = False
+
+            lst[(position - 1)].append(what)
+
+        output = ''
+        for i in range(numRows):
+            for a in range(len(lst[i])):
+                output += lst[i][a]
+
+        return output
