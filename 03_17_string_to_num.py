@@ -10,20 +10,43 @@
 
 class Solution:
     def myAtoi(self, str: str) -> int:
+        answer = ''
+        neg = False
+        plus = False
+        for what in str:
+            if answer is '' and what is '-':
+                if plus is False and neg is False:
+                    neg = True
+                else:
+                    break
+            elif answer is '' and what is '+':
+                if neg is False and plus is False:
+                    plus = True
+                    what = ' '
+                else:
+                    break
+            elif what.isdigit():
+                answer += what
+            elif what == ' ':
+                if answer == '' and plus is False and neg is False:
+                    pass
+                else:
+                    break
+            else:
+                break
 
+        if answer == '':
+            return(0)
 
+        if answer != '':
+            answer = int(answer)
 
+            if neg is True:
+                answer = answer * -1
 
+            if answer > 2147483647:
+                answer = 2147483647
+            if answer < -2147483648:
+                answer = -2147483648
 
-
-
-
-
-
-
-
-
-
-
-
-
+        return answer
