@@ -1,0 +1,47 @@
+*****************************************************************************
+****                            HTML                                     ****
+*****************************************************************************
+*****************************************************************************
+
+Source: https://www.w3schools.com/html/html_intro.asp 
+
+
+What is HTML?
+    - HTML stands for Hyper Text Markup Language
+    - HTML describes the structure of Web pages using markup
+    - HTML elements are the building blocks of HTML pages and its elements are represented by tags
+
+
+*****************************************************************************
+****                             XML                                     ****
+*****************************************************************************
+*****************************************************************************
+
+Source: https://www.w3schools.com/XML/xml_whatis.asp 
+
+
+What is XML?
+    - XML stands for eXtensible Markup Language (much like HTML)
+    - XML was designed to store and transport data
+    - XML was designed to be self-descriptive
+
+
+XML does not DO anything. This note is a note to Tove from Jani, stored as XML:
+
+
+<note>
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+</note>
+
+
+The difference between XML and HTML:
+    - XML was designed to carry data
+    - HTML was designed to display data
+    - XML tags are not predefined like HTML tags are
+
+
+Why is XML eXtensible?
+    Because XML tags are not predefined, most XML applications will work as expected even if new data is added (or removed).
