@@ -1,0 +1,62 @@
+React Native
+
+
+
+“Learn once, write everywhere.” instead of “Write once, use everywhere.”
+
+
+React[Native] is something added to the normal React
+React + React[Native]
+
+
+JSX are not HTML; no <div> or <spam>; they are not DOM elements
+		=> Compile to:
+Real Native App
+
+
+React[Native] replaces the DOM and give us an alternative DOM that functions like a native app.
+
+
+        Native Apps, Web Apps, Hybrid Apps?
+        https://www.mobiloud.com/blog/native-web-or-hybrid-apps/
+
+        As of 2018, Android controls about 88% of the mobile device market worldwide, and Apple owns most of the rest.
+
+        Android is developed and supported by Google, often considered a more open platform compared to Apple.
+
+        In fact, Android is an open source operating system, which means that a number of device makers can use Android on their devices. Google sells a few devices of its own, but many Android users are using devices built by other companies like Samsung, Huawei, LG, HTC, etc.
+
+        Web Apps
+
+        Don’t let the word “app” confuse you, though. Web apps don’t need to be downloaded like mobile apps do.
+
+        Web apps load in browsers like Chrome, Safari, or Firefox and they don’t take up any memory or storage on the user’s device.
+
+        Mobile Apps
+
+        There are two kinds of mobile apps: native and hybrid.
+
+        Push Notifications
+
+        Only mobile apps give you the opportunity to send well-timed push notifications to re-engage users.
+
+        According to data from Localytics, when a user opts in to receive push notifications, they will launch your app 88% more than a user who doesn’t receive them.
+
+        Native Apps
+
+        Unlike web apps that are written primarily in Javascript, native apps are applications written in languages that the platform they are being built for accepts. For example, Swift or Objective-C is used to write native iOS apps, Java is used to write native Android apps, and C# for the most part for Windows Phone apps.
+
+        Native apps offer the fastest, most reliable and most responsive experience to users.
+
+        React Native
+
+        With React Native you can build a real mobile app that’s indistinguishable from an app built using Objective-C or Java.
+
+        You just use JavaScript and React to put it together.
+
+        There are some pretty heavy-hitters using React Native, including Facebook, Walmart, Tesla, and Airbnb. You can check out some React Native apps here and here. 
+
+
+
+
+
