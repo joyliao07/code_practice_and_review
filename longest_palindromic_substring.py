@@ -7,11 +7,11 @@ class Solution:
         longest = ''
         for i in range(len(s)):
             phrase = ''
-            for a in range(i, len(s) - i):
+            for a in range(i, len(s)):
                 phrase += s[a]
                 if phrase == phrase[::-1]:
                     if length < len(phrase):
                         length = len(phrase)
                         longest = phrase
-                      
+
         return longest
