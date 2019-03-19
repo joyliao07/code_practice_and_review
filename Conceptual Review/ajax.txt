@@ -8,7 +8,7 @@ Source: https://www.w3schools.com/xml/ajax_intro.asp
 
 AJAX is not a programing language
 AJAX is a technique for accessing web servers from a web page
-AJAX stands for Asynchronous JavaScript And XML
+AJAX stands for Asynchronous JavaScript And XML (i.e. Asynchronous HTTP Request)
 
 
 With AJAX, you can:
@@ -17,31 +17,31 @@ With AJAX, you can:
     - Send data to a server - in the background
 
 
-HTML:
-<!DOCTYPE html>
-<html>
-<body>
+        HTML:
+        <!DOCTYPE html>
+        <html>
+        <body>
 
-<div id="demo">
-  <h2>Let AJAX change this text</h2>
-  <button type="button" onclick="loadDoc()">Change Content</button>
-</div>
+        <div id="demo">
+        <h2>Let AJAX change this text</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+        </div>
 
-</body>
-</html> 
+        </body>
+        </html> 
 
 
-JS:
-function loadDoc() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("demo").innerHTML = this.responseText;
+        JS:
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "ajax_info.txt", true);
+            xhttp.send();
         }
-    };
-    xhttp.open("GET", "ajax_info.txt", true);
-    xhttp.send();
-}
 
 
 AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or JSON text.
