@@ -104,26 +104,3 @@ The HTTP Request Circle:
         4. The browser requests JavaScript code. The server returns a JS file
         5. The browser requests data. The server returns data (in XML or JSON).
 
-
-*****************************************************************************
-****                            HTML                                     ****
-*****************************************************************************
-*****************************************************************************
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
