@@ -4,4 +4,13 @@
 
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-       
+        max = 0
+        for i in range(len(height)):
+            for a in range(i, len(height)):
+                # length = abs(i - a)
+                # height_2 = min(height[i], height[a])
+                container = (abs(i - a)) * (min(height[i], height[a]))
+                if max < container:
+                    max = container
+        return max
+
