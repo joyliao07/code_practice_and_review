@@ -4,13 +4,21 @@
 
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        max = 0
-        for i in range(len(height)):
-            for a in range(i, len(height)):
-                # length = abs(i - a)
-                # height_2 = min(height[i], height[a])
-                container = (abs(i - a)) * (min(height[i], height[a]))
-                if max < container:
-                    max = container
-        return max
-
+        # max = 0
+        # for i in range(len(height)):
+        #     for a in range(i, len(height)):
+        #         # length = abs(i - a)
+        #         # height_2 = min(height[i], height[a])
+        #         container = (abs(i - a)) * (min(height[i], height[a]))
+        #         if max < container:
+        #             max = container
+        # return max
+        i, j = 0, len(height) - 1
+        water = 0
+        while i < j:
+            water = max(water, (j - i) * min(height[i], height[j]))
+            if height[i] < height[j]:
+                i += 1
+            else:
+                j -= 1
+        return water
