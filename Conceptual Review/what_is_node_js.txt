@@ -1,0 +1,32 @@
+*****************************************************************************
+****                             Node JS                                 ****
+*****************************************************************************
+*****************************************************************************
+
+Source: https://www.w3schools.com/nodejs/nodejs_intro.asp
+
+- an open source server environment
+- runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)
+- uses JavaScript on the server
+
+
+
+A runtime environment for running JS outside a browser. We use Node to build backend services, such as API's. Great for prototyping and Agile development. You can use the same coding language (i.e. JS) on both frontend and backend, which gives you a cleaner source code.
+
+
+At PayPal, they built one of their JAVA-Spring based app using Node, and the result:
+    - Built twice as fast with fewer people
+    - 33% fewer lines of code
+    - 40% fewer files
+    - 35% faster response time
+    - 2* req/sec
+
+
+NodeJS has the largest ecosystem of open-source libraries.
+
+
+What can Node JS do?
+    - Generate dynatmic page content
+    - Create, open, read, write, delete and close files on the server
+    - Collect form data
+    - Add, delete, and modify data in your database
