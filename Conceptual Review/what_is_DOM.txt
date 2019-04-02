@@ -1,0 +1,25 @@
+*****************************************************************************
+****                             DOM                                     ****
+*****************************************************************************
+*****************************************************************************
+
+Source: https://www.w3.org/TR/REC-DOM-Level-1/introduction.html 
+
+
+Document Object Model:
+
+The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. It defines the "logical structure of documents" and the way a document is accessed and manipulated.
+
+Most things in an HTML or XML document can be accessed, changed, deleted, or added using the Document Object Model. The nodes do not represent a data structure, they represent objects, which have functions and identity.
+
+
+Source: https://www.w3schools.com/XML/dom_intro.asp
+
+
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+Example:
+
+    document.getElementById("demo").innerHTML = "Hello World!";
+
+    document.getElementsByTagName("h1")[0].innerHTML = "Hello World!";
