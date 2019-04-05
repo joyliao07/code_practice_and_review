@@ -4,6 +4,16 @@ Abstract equality will attempt to resolve the data types via type coercion befor
     == equal value
     === equal value and equal type
 
+What are the advantages of using JavaScript?
+    - Lightweight: JavaScript can be executed within the user’s browser without having to communicate with the server, saving on bandwidth.
+    - Versatile: JS can be used on both front-end and server-side technologies.
+    - Rich interface: JS has some of the most popular fronend frameworks like React and AngularJS
+
+What's the weakness of using JavaScript?
+
+JavaScript’s main weakness is security. Look for answers on how it can be exploited. A secondary weakness is JavaScript’s ubiquity and versatility—it can be a double-edged sword in that there’s a lot of room for programming quirks that can lead to inconsistent performance across different platforms.
+
+What's the difference between classical inheritance and prototypal inheritance?
 
 
 
@@ -28,5 +38,4 @@ Abstract equality will attempt to resolve the data types via type coercion befor
 
 
 
-
-
+Source: https://www.upwork.com/i/interview-questions/javascript/ 
