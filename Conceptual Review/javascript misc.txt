@@ -1,0 +1,32 @@
+Abstract vs Strict Equality:
+
+Abstract equality will attempt to resolve the data types via type coercion before making a comparison. Strict equality will return false if the types are different. 
+    == equal value
+    === equal value and equal type
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
