@@ -1,0 +1,28 @@
+What is functional programming?
+
+Functional programming is a programming paradigm that that treats computation as the evaluation of mathematical functions avoids changing-state and mutable data. It is a declarative programming paradigm, which means programming is done with expressions or declarations.
+
+Functional programming (often abbreviated FP) is the process of building software by composing pure functions, avoiding shared state, mutable data, and side-effects.
+
+
+What is a pure function?
+
+1. Its return value is the same for the same arguments (no variation with local static variables, non-local variables, mutable reference arguments or input streams from I/O devices).
+2. Its evaluation has no side effects (no mutation of local static variables, non-local variables, mutable reference arguments or I/O streams).
+
+
+How is functional programming different from object-oriented programming?
+
+Both OOP and FP have the shared goal of creating understandable, flexible programs that are free of bugs. But they have two different approaches for how to best create those programs.
+
+OOP says that bringing together data and its associated behavior in a single location (called an “object”) makes it easier to understand how a program works. FP says that data and behavior are distinctively different things and should be kept separate for clarity.
+
+
+
+
+
+
+Source: https://en.wikipedia.org/wiki/Functional_programming 
+Source: https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0 
+Source: https://en.wikipedia.org/wiki/Pure_function 
+Source: https://www.codenewbie.org/blogs/object-oriented-programming-vs-functional-programming 
