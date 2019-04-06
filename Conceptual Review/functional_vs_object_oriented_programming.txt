@@ -5,10 +5,10 @@ Functional programming is a programming paradigm that that treats computation as
 Functional programming (often abbreviated FP) is the process of building software by composing pure functions, avoiding shared state, mutable data, and side-effects.
 
 
-What is a pure function?
+    What is a pure function?
 
-1. Its return value is the same for the same arguments (no variation with local static variables, non-local variables, mutable reference arguments or input streams from I/O devices).
-2. Its evaluation has no side effects (no mutation of local static variables, non-local variables, mutable reference arguments or I/O streams).
+    1. Its return value is the same for the same arguments (no variation with local static variables, non-local variables, mutable reference arguments or input streams from I/O devices).
+    2. Its evaluation has no side effects (no mutation of local static variables, non-local variables, mutable reference arguments or I/O streams).
 
 
 How is functional programming different from object-oriented programming?
@@ -17,8 +17,55 @@ Both OOP and FP have the shared goal of creating understandable, flexible progra
 
 OOP says that bringing together data and its associated behavior in a single location (called an “object”) makes it easier to understand how a program works. FP says that data and behavior are distinctively different things and should be kept separate for clarity.
 
+Example of giving all your employees a $10,000.00 raise, OOP:
+
+    class Employee
+        def initialize(name, salary)
+            @name = name
+            @salary = salary
+        end
+
+        def change_salary(amt)
+            @salary = @salary + amt
+        end
+
+        def description
+            "#{@name} makes #{@salary}"
+        end
+        end
+
+Now we’ll generate some objects to work with:
+
+    employees = [
+        Employee.new("Bob", 100000.0),
+        Employee.new("Jane", 125000.0)
+    ]
+
+Now let’s give out those raises:
+
+    employees.each do |emp|
+        emp.change_salary(10000.0)
+    end
 
 
+Example of giving all your employees a $10,000.00 raise, FP:
+
+    employees = [
+        [ "Bob",  100000.0 ],
+        [ "Jane", 125000.0 ]
+    ]
+
+Now let’s give out those raises:
+
+    happier_employees = change_salaries(employees, 10000.0)
+
+    happier_employees.each do |emp|
+        puts "#{emp[0]} makes #{emp[1]}"
+    end
+
+Something you’ll notice right off is there are fewer lines of code, mainly because we don’t build the class for creating our objects.
+
+Another subtle -- but important -- difference is that in the OOP version change_salary used each to process each employee, but the FP version uses map. Instead of changing the original value, ’map’ creates a copy of the array containing the return value of each pass. The original array is untouched!
 
 
 

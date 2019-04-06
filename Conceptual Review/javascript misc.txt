@@ -34,27 +34,5 @@ What's the difference between classical inheritance and prototypal inheritance?
         rabbit.__proto__ = animal;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Source: https://www.upwork.com/i/interview-questions/javascript/ 
 Source: https://javascript.info/prototype-inheritance 
-
-Source: 
-Source: 
