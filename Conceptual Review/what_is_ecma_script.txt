@@ -1,0 +1,14 @@
+What is ECMAScript?
+
+
+ECMAScript (European Computer Manufacturers Association Script) is a scripting language based on JavaScript. ECMAScript is object-oriented and is widely used on the World Wide Web especially for client-side scripting.
+
+The core features of Javascript are based on the ECMAScript standard, but Javascript also has other additional features that are not in the ECMA specifications/standard. 
+
+ActionScript (used by Adobe Flash) and JScript (used by Microsoft) are both languages that implement the ECMAScript standard. The best way to think of languages that implement the ECMAScript standard (including Javascript) is as dialects that all share the same “core” structure, but each language adds their own style and “tone” on top of the ECMAScript standard.
+
+
+
+
+Source: https://www.techopedia.com/definition/14291/ecmascript 
+Source: https://www.programmerinterview.com/index.php/javascript/javascript-what-is-ecmascript/
