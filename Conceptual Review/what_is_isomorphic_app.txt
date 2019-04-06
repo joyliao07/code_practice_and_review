@@ -1,0 +1,33 @@
+JS & "Client-side Processing":
+
+Javascript was traditionally the language of the web browser, performing computations directly on a user’s machine. This is referred to as “client-side” processing. With the advent of Node.js, JavaScript has become a compelling “server-side” language as well, which was traditionally the domain of languages like Java, Python and PHP.
+
+
+What is an isomorphic application?
+
+In web development, an isomorphic application is one whose code (in this case, JavaScript) can run both in the server and the client.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Source: https://www.lullabot.com/articles/what-is-an-isomorphic-application 
+Source: 
+Source: 
+Source: 
+Source: 
+Source: 
+
+
+

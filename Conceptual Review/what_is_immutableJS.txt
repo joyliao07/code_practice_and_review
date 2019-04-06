@@ -1,0 +1,9 @@
+Immutable collections for JS
+
+
+Immutable data cannot be changed once created, leading to much simpler application development. Persistent data presents a mutative API which does not update the data in-place, but instead always yields new updated data.
+
+
+
+Source: https://github.com/immutable-js/immutable-js
+
