@@ -1,0 +1,52 @@
+Pandas
+
+
+
+https://github.com/joyliao07/stock_portfolio/blob/master/app/routes.py
+
+ 
+
+
+
+Calculations
+https://stackoverflow.com/questions/30794525/adding-one-to-all-the-values-in-a-dataframe#30800415 
+
+
+
+
+v-lookups
+https://stackoverflow.com/questions/25493625/vlookup-in-pandas-using-join 
+
+
+Example1
+sku loc flag  
+122  61 True 
+123  61 True
+113  62 True 
+122  62 True 
+123  62 False
+122  63 False
+301  63 True 
+
+Example2 
+sku dept 
+113 a
+122 b
+123 b
+301 c 
+
+df.merge(df1, on='sku', how='left')
+
+If sku is in fact your index then do this:
+df.merge(df1, left_index=True, right_index=True, how='left')
+
+
+Sheet merging
+https://stackoverflow.com/questions/25400240/using-pandas-combining-merging-2-different-excel-files-sheets 
+
+
+
+
+
+Data filter
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.filter.html 
