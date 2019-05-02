@@ -15,8 +15,13 @@ class Solution:
         # return max
         i, j = 0, len(height) - 1
         water = 0
+
+        # i starts from the left, j starts from the right; testing possible combinations before they cross each other:
         while i < j:
+            # the max of zero, or the width times the lower of (i or j):
             water = max(water, (j - i) * min(height[i], height[j]))
+
+            # discarding the shorter line, and keep only the longer line; testing all possible combinations until i and j come across each other:
             if height[i] < height[j]:
                 i += 1
             else:
