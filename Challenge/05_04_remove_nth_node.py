@@ -12,11 +12,19 @@
 
 class Solution:
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
+        slow = fast = head
+        for _ in range(n):
+            fast = fast.next
 
+        if not fast:
+            return head.next
 
+        # testing if there is fast.next and move the markers down:
+        while fast.next:
+            fast = fast.next
+            slow = slow.next
 
+        # when it's at the end of the linked list:
+        slow.next = slow.next.next
 
-
-
-
-
+        return head
