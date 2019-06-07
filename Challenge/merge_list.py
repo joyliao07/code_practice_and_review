@@ -21,11 +21,12 @@ class Solution:
             if current_2.val < current_1.val:
                 current_3.next = current_2
                 current_2 = current_2.next
-                current_3 = current_3.next
+                # current_3 = current_3.next
             else:
                 current_3.next = current_1
                 current_1 = current_1.next
-                current_3 = current_3.next
+            # Improve runtime from 82% to 99%
+            current_3 = current_3.next
         while current_1:
             current_3.next = current_1
             current_1 = current_1.next
