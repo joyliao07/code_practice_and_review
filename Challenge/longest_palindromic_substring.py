@@ -3,6 +3,7 @@
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        """Runtime 13.55%; Memory 72.72%"""
         length = 0
         longest = ''
         for i in range(len(s)):
@@ -13,5 +14,21 @@ class Solution:
                     if length < len(phrase):
                         length = len(phrase)
                         longest = phrase
-
         return longest
+
+    def longestPalindrome_2(self, s: str) -> str:
+        """Runtime 0%; Memory 0%"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
