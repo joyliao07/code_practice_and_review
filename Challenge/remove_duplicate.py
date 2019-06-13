@@ -10,5 +10,16 @@
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
+        if len(nums) == 0:
+            return
+        check = []
+        i = 0
 
+        while i < len(nums):
+            if nums[i] not in check:
+                check.append(nums[i])
+                i += 1
+            else:
+                nums.remove(nums[i])
 
+        return len(nums)
