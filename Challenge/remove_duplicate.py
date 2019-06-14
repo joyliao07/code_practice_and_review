@@ -9,7 +9,8 @@
 # Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
 
 class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
+    def removeDuplicates_1(self, nums: List[int]) -> int:
+        """Runtime 5.04%; Memory 43.35%"""
         if len(nums) == 0:
             return
         check = []
@@ -23,3 +24,31 @@ class Solution:
                 nums.remove(nums[i])
 
         return len(nums)
+
+    def removeDuplicates_2(self, nums: List[int]) -> int:
+        """Runtime 8.79%; Memory 79.88%"""
+        if len(nums) == 0:
+            return
+        i = 0
+
+        while i+1 < len(nums):
+            if nums[i] == nums[i+1]:
+                nums.remove(nums[i])
+            else:
+                i += 1
+       
+        return len(nums)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
