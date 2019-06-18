@@ -5,7 +5,7 @@
 # Your function should return length = 2, with the first two elements of nums being 2.
 
 class Solution:
-    def removeElement(self, nums: List[int], val: int) -> int:
+    def removeElement_1(self, nums: List[int], val: int) -> int:
         """Runtime 85.60%; Memory 39.55%"""
         i = 0
         while i < len(nums):
@@ -14,4 +14,13 @@ class Solution:
             else:
                 i +=1
         return nums
+
+    def removeElement_2(self, nums: List[int], val: int) -> int:
+        """Runtime 55.93%; Memory 42.85%"""
+        while val in nums:
+            nums.remove(val)
+        return nums
+
+
+
 
