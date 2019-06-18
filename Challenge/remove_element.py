@@ -21,6 +21,15 @@ class Solution:
             nums.remove(val)
         return nums
 
-
-
+    def removeElement_3(self, nums: List[int], val: int) -> int:
+        nums.sort()
+        removed = False
+        i = 0
+        while i < len(nums) and removed is False:
+            while i < len(nums):
+                if nums[i] == val:
+                    nums.remove(nums[i])
+                    removed = True
+            i += 1
+        return nums
 
