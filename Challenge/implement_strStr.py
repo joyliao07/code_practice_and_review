@@ -6,11 +6,16 @@
 
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
+        """Runtime 23%; Memory 95%"""
+        if len(haystack) == 0:
+            if len(needle) == 0:
+                return 0  
+            else:
+                return -1
 
-
-
-
-
-
-
-
+        length = len(needle)
+        for i in range(len(haystack) + length):
+            if haystack[i:(i+length)] == needle:
+                return i
+        return -1
+        
