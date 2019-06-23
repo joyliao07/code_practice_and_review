@@ -15,18 +15,14 @@
 
 class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        """Runtime 74.83%; Memory 99.86%"""
+        answer = dividend // divisor
+        
+        if answer < (-2**31):
+            return (-2**31)
+        elif answer > (2**31 -1):
+            return (2**31 -1)
+        elif answer < 0 and answer != dividend/divisor:
+            return(answer +1)
+        else:
+            return answer
