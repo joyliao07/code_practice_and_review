@@ -12,44 +12,27 @@
 
 class Solution:
     def nextPermutation(self, nums: List[int]) -> None:
+        """Runtime 15.98%; Memory 94.95%"""
         if len(nums) == 0 or len(nums) == 1:
             return
-        
-        greater = nums[0]
-        for i in range(1, len(nums)):
-            if nums[i] > greater:
-                greater = nums[i]
-        
-        if greater == nums[0]:
+
+        for i in reversed(range(len(nums))):
+            temp = nums[i:]
+            temp.sort(reverse=True)
+            if temp == nums[i:]:
+                position = i
+
+        if position == 0:
             nums.sort()
             return
-            
-        nums.remove(greater)
-            
-        if len(nums) >= 2:
-            nums.insert(1, greater)
-        else:
-            nums.insert(0, greater)
-        
+
+        for i in range(position, len(nums)):
+            if nums[i] > nums[position - 1]:
+                position_2 = i
+
+        nums[position - 1], nums[position_2] = nums[position_2], nums[position - 1]
+
+        temp_2 = nums[position:]
+        temp_2.sort()
+        nums[position:] = temp_2
         return
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
