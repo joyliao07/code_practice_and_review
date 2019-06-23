@@ -12,7 +12,26 @@
 
 class Solution:
     def nextPermutation(self, nums: List[int]) -> None:
-
+        if len(nums) == 0 or len(nums) == 1:
+            return
+        
+        greater = nums[0]
+        for i in range(1, len(nums)):
+            if nums[i] > greater:
+                greater = nums[i]
+        
+        if greater == nums[0]:
+            nums.sort()
+            return
+            
+        nums.remove(greater)
+            
+        if len(nums) >= 2:
+            nums.insert(1, greater)
+        else:
+            nums.insert(0, greater)
+        
+        return
 
 
 
