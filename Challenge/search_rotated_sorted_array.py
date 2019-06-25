@@ -19,7 +19,11 @@
 
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-
+        """Runtime 15.85%; Memory 20.19%"""
+        for i in range(len(nums)):
+            if nums[i] == target:
+                return i         
+        return -1
 
 
 
