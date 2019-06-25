@@ -18,7 +18,7 @@
 # Output: -1
 
 class Solution:
-    def search(self, nums: List[int], target: int) -> int:
+    def search_1(self, nums: List[int], target: int) -> int:
         """Runtime 15.85%; Memory 20.19%"""
         for i in range(len(nums)):
             if nums[i] == target:
@@ -26,12 +26,19 @@ class Solution:
         return -1
 
 
+    def search_2(self, nums: List[int], target: int) -> int:
+        """Runtime 94.04%; Memory 97.5%"""
+        if len(nums) == 0:
+            return -1
 
-
-
-
-
-
-
-
-
+        if target >= nums[0]:
+            for i in range(len(nums)):
+                if nums[i] == target:
+                    return i    
+        else:
+            if target > nums[-1]:
+                return -1
+            for i in range(len(nums) -1, -1, -1):
+                if nums[i] == target:
+                    return i     
+        return -1
