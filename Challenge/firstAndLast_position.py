@@ -15,7 +15,18 @@
 
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-
+        """Runtime 97.05%; Memory 7.68%"""
+        first, last = None, None
+        for i in range(len(nums)):
+            if nums[i] == target:
+                if first is not None:
+                    last = i
+                else:
+                    first, last = i, i
+        if first is not None:
+            return [first, last]
+        else:
+            return [-1, -1]
 
 
 
