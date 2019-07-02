@@ -21,5 +21,18 @@
 
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
-        
-
+        """Runtime 77.68%; Memory 71.36%"""
+        if target < nums[0]:
+            return 0
+        if target > nums[-1]:
+            return (len(nums))
+        else:
+            position = None
+            for i in range(len(nums)):
+                if nums[i] < target:
+                    position = i
+                else:
+                    if position == None:
+                        return 0
+                    else:
+                        return (position + 1)
