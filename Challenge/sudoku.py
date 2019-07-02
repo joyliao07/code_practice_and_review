@@ -40,7 +40,7 @@ A partially filled sudoku which is valid.
 # Output: false
 
 class Solution:
-    def isValidSudoku(self, board: List[List[str]]) -> bool:
+    def isValidSudoku_1(self, board: List[List[str]]) -> bool:
         """Runtime 81.74%; Memory 75.68%"""
         
         for i in range(0, 9):
@@ -93,5 +93,42 @@ class Solution:
                     test.append(board[a][i])
             test = []
             ind += 3
+                
+        return True
+
+    def isValidSudoku_2(self, board: List[List[str]]) -> bool:
+        """Runtime 93.75%; Memory 45.16%"""        
+
+        for i in range(0, 9):
+
+            row = board[i]
+            test = []
+            for what in row:
+                if what != ".":
+                    if what in test:
+                        return False
+                    test.append(what)
+
+            test = []
+            for a in range(0, 9):
+                if board[a][i] != ".":
+                    if board[a][i] in test:
+                        return False
+                    test.append(board[a][i])
+            
+        ind_a = 0
+        while ind_a < 7:
+            ind = 0
+            while ind < 7:
+                test = []
+                for i in range(ind, ind+3):
+                    for a in range(ind_a, ind_a+3):
+                        if board[a][i] != ".":
+                            if board[a][i] in test:
+                                return False
+                            test.append(board[a][i])
+                test = []
+                ind += 3
+            ind_a += 3
                 
         return True
