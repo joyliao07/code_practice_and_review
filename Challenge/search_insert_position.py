@@ -20,7 +20,7 @@
 # Output: 0
 
 class Solution:
-    def searchInsert(self, nums: List[int], target: int) -> int:
+    def searchInsert_1(self, nums: List[int], target: int) -> int:
         """Runtime 77.68%; Memory 71.36%"""
         if target < nums[0]:
             return 0
@@ -36,3 +36,12 @@ class Solution:
                         return 0
                     else:
                         return (position + 1)
+
+class Solution:
+    def searchInsert_2(self, nums: List[int], target: int) -> int:
+        """Runtime 92.45%; Memory 80.30%"""
+        if target in nums:
+            return nums.index(target)
+        all = nums + [target]
+        all.sort()
+        return all.index(target)
