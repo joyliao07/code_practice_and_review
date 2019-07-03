@@ -1,15 +1,6 @@
-*****************************************************************************
-****                            RESTful API                              ****
-*****************************************************************************
-*****************************************************************************
+# RESTful API
 
-Source: https://restfulapi.net/ 
-Source: https://restful.io/rest-api-back-to-basics-c64f282d972 
-Source: https://stackoverflow.com/questions/25172600/rest-what-exactly-is-meant-by-uniform-interface 
-
-
-REST - REpresentational State Transfer:
-
+## REST - REpresentational State Transfer:
 
 Guiding Principles of REST:
 
@@ -30,3 +21,15 @@ Guiding Principles of REST:
         4) hypermeida as the engine of application state: It means, once a client have initial response, then response should contains hyper links which allows a client to move to the next state of the application. Consider an example of web-browser accessing a url, once browser get the response then it automatically requests all resources needed to render the page completely.
 
 5. Layered System: An architecture to be composed of hierarchical layers by constraining component behavior such that each component cannot “see” beyond the immediate layer with which they are interacting.
+
+
+
+
+
+
+
+
+
+Source: https://restfulapi.net/ 
+Source: https://restful.io/rest-api-back-to-basics-c64f282d972 
+Source: https://stackoverflow.com/questions/25172600/rest-what-exactly-is-meant-by-uniform-interface 
