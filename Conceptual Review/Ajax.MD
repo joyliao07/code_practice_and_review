@@ -1,37 +1,37 @@
-*****************************************************************************
-****                            AJAX                                     ****
-*****************************************************************************
-*****************************************************************************
 
-Source: https://www.w3schools.com/xml/ajax_intro.asp 
+# AJAX
 
+## What Is AJAX
 
 AJAX is not a programing language
 AJAX is a technique for accessing web servers from a web page
 AJAX stands for Asynchronous JavaScript And XML (i.e. Asynchronous HTTP Request)
 
+## What Can AJAX Do
 
 With AJAX, you can:
+
     - Update a web page without reloading the page
     - Request and receive data from a server - after the page has loaded
     - Send data to a server - in the background
+    
+Example HTML:
 
-
-        HTML:
         <!DOCTYPE html>
         <html>
         <body>
 
         <div id="demo">
-        <h2>Let AJAX change this text</h2>
-        <button type="button" onclick="loadDoc()">Change Content</button>
+            <h2>Let AJAX change this text</h2>
+            <button type="button" onclick="loadDoc()">Change Content</button>
         </div>
 
         </body>
         </html> 
 
 
-        JS:
+Example JavaScript:
+
         function loadDoc() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
@@ -46,6 +46,8 @@ With AJAX, you can:
 
 AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or JSON text.
 
+
+Source: https://www.w3schools.com/xml/ajax_intro.asp 
 
 *****************************************************************************
 ****                            XHR                                     ****
