@@ -4,7 +4,11 @@
 
         REST != HTTP
 
-REST is an architectural style for "distributed hyptermedia systems" that aims to be simple, lightweight, and fast. It was first invented by Roy Fielding in 2000 in his famous dissertation.
+REST is an architectural style for "distributed hyptermedia systems" that follows the five guiding principles and aims to be simple, lightweight, and fast. It was first invented by Roy Fielding in 2000 in his famous dissertation.
+
+In simplest words, in the REST architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs). The clients and servers exchange representations of resources by using a standardized interface and protocol – typically HTTP.
+
+Resources are decoupled from their representation so that their content can be accessed in a variety of formats, such as HTML, XML, plain text, PDF, JPEG, JSON, and others.
 
 
 ## Guiding Principles of REST:
@@ -24,7 +28,7 @@ REST is an architectural style for "distributed hyptermedia systems" that aims t
         
         3) self-descriptive message: When server returns resource representation to the client then server should tell the client how to process the representation. Basically in terms of HTTP, content-type header should tell whether it is JSON or XML or some other format so that client can parse this representation.
         
-        4) hypermeida as the engine of application state: It means, once a client have initial response, then response should contains hyper links which allows a client to move to the next state of the application. Consider an example of web-browser accessing a url, once browser get the response then it automatically requests all resources needed to render the page completely.
+        4) hypermeida as the engine of application state: It means, once a client have initial response, then response should contains hyperlinks which allows a client to move to the next state of the application. Consider an example of web-browser accessing a url, once browser get the response then it automatically requests all resources needed to render the page completely.
 
 5. Layered System: An architecture to be composed of hierarchical layers by constraining component behavior such that each component cannot “see” beyond the immediate layer with which they are interacting.
 
@@ -35,11 +39,17 @@ The key abstraction of information in REST is a resource. Any information that c
 **Resource Identifier:** REST uses a resource identifier to identify the particular resource involved in an interaction between components.
 
 
-**Resource Representation:** The state of resource at any particular timestamp is known as resource representation.
+**Resource Representation:** The state of resource at any particular timestamp is known as resource representation. A representation consists of data, metadata describing the data and hypermedia links which can help the clients in transition to next desired state.
 
+According to Roy Fielding:
 
+    Hypertext (or hypermedia) mean the simultaneous presentation of information and controls such that the information becomes the affordance through which the user (or automaton) obtains choices and selects actions. 
 
-
+## Resource Methods:
+        - Get
+        - Post
+        - Put
+        - Delete  
 
 
 
