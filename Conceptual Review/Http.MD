@@ -11,22 +11,34 @@ Development of HTTP was initiated by Tim Berners-Lee at CERN, the European Parti
 ![Tim Berners-Lee](https://github.com/joyliao07/code_practice_and_review/blob/conceptual/Conceptual%20Review/assets/berners-lee.jpg)
 
 
-Source: https://www.w3schools.com/whatis/whatis_http.asp 
+## HTTP Request / Response:
 
-
-HTTP Request / Response:
-
-    Communication between clients and servers is done by requests and responses:
+Communication between clients and servers is done by requests and responses:
 
         1. A client (a browser) sends an HTTP request to the web
         2. An web server receives the request
         3. The server runs an application to process the request
         4. The server returns an HTTP response (output) to the client browser
 
+Three parts of an HTTP Request:
+    1. URL
+    2. Headers (Example – Accept-Language: EN)
+    3. Message body which is optional
 
-The HTTP Request Circle:
 
-    A typical HTTP request / response circle:
+Three parts of an HTTP Response:
+    1. Headers (Example – Content-Type: html)
+    2. Message body which is optional
+    3. Status code
+
+## HTTPS
+
+HTTPS is the secured HTTP protocol required to send and receive information securely over internet. Nowadays it is mandatory for all websites to have HTTPS protocol to have secured internet.
+
+
+## The HTTP Request Circle:
+
+A typical HTTP request / response circle:
 
         1. The browser requests an HTML page. The server returns an HTML file.
         2. The browser requests a style sheet. The server returns a CSS file.
@@ -36,20 +48,6 @@ The HTTP Request Circle:
 
 
 
+Source: https://www.w3schools.com/whatis/whatis_http.asp 
 Source: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Source: https://www.webnots.com/what-is-http/ 
