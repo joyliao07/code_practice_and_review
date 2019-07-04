@@ -47,6 +47,8 @@ A typical HTTP request / response circle:
 
 
 
-Source: https://www.w3schools.com/whatis/whatis_http.asp 
+Source: https://www.w3schools.com/whatis/whatis_http.asp
+
 Source: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol 
+
 Source: https://www.webnots.com/what-is-http/ 
