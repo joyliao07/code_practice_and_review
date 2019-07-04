@@ -10,6 +10,7 @@ Development of HTTP was initiated by Tim Berners-Lee at CERN, the European Parti
 
 ![Tim Berners-Lee](https://github.com/joyliao07/code_practice_and_review/blob/conceptual/Conceptual%20Review/assets/berners-lee.jpg)
 
+<img src="https://github.com/joyliao07/code_practice_and_review/blob/conceptual/Conceptual%20Review/assets/berners-lee.jpg" width="200">
 
 ## HTTP Request / Response:
 
