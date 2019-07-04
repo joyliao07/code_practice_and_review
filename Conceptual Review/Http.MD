@@ -8,9 +8,7 @@ HTTP is the foundation of data communication for the World Wide Web, where hyper
 
 Development of HTTP was initiated by Tim Berners-Lee at CERN, the European Particle Physics Laboratory in Geneva, in 1989. 
 
-![Tim Berners-Lee](https://github.com/joyliao07/code_practice_and_review/blob/conceptual/Conceptual%20Review/assets/berners-lee.jpg)
-
-<img src="https://github.com/joyliao07/code_practice_and_review/blob/conceptual/Conceptual%20Review/assets/berners-lee.jpg" width="200">
+<img src="https://github.com/joyliao07/code_practice_and_review/blob/conceptual/Conceptual%20Review/assets/berners-lee.jpg" width="450">
 
 ## HTTP Request / Response:
 
